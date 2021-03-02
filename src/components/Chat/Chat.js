@@ -8,8 +8,8 @@ import Messages from "../Messages/Messages";
 import Picker from "emoji-picker-react";
 import TextContainer from "../TextContainer/TextContainer";
 
-const ENDPOINT = "http://localhost:5000";
-// const ENDPOINT = "https://baat-chit.herokuapp.com/";
+// const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://baat-chit.herokuapp.com/";
 let socket;
 let typingTimer;
 
