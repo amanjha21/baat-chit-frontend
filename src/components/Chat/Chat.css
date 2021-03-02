@@ -30,7 +30,7 @@ body {
   width: 200px;
   /* clip-path: circle(50% at 50% 50%); */
   border-radius: 50%;
-  animation: shrinkGrow 30s ease-in-out infinite;
+  animation: shrinkGrow 20s ease-in-out infinite;
 }
 .heptagon {
   background-color: rgb(255, 255, 255);
@@ -58,8 +58,6 @@ body {
   border-radius: 12px;
   height: 60%;
   width: 35%;
-  backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
   overflow: hidden;
 }
 
@@ -130,7 +128,7 @@ input.emoji-search {
   }
   .container {
     width: 90%;
-    height: 650px;
+    height: 600px;
     display: flex;
     margin-bottom: 100px;
   }
