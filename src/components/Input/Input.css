@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  border-top: 2px solid #88878779;
+}
+
+.input {
+  border: none;
+  border-left: 2px solid #0000003f;
+  border-radius: 0;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+  background-color: #39495a;
+  color: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  background: #f90;
+
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  width: 20%;
+  cursor: pointer;
+}
+.emoji {
+  padding: 5% 2%;
+  margin: 0;
+  cursor: pointer;
+}
+.emoji:hover,
+.sendButton:hover {
+  background: rgba(255, 153, 0, 0.753);
+}
