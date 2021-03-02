@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Join.css";
 
 const Join = () => {
@@ -47,14 +47,14 @@ const Join = () => {
             onChange={(event) => setRoom(event.target.value)}
           />
         </div>
-        <Link
+        <a
           onClick={(event) => (!name || !room ? event.preventDefault() : null)}
-          to={`/chat?name=${name}&room=${room}`}
+          href={`/chat?name=${name}&room=${room}`}
         >
           <button className="button mt-20" type="submit">
             Join Room
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   );

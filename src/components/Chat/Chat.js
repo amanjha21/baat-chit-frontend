@@ -34,6 +34,7 @@ const Chat = ({ location }) => {
   //for handelling join and disconnect event
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
+    if (!name && !room) return (window.location.href = "/");
 
     socket = io.connect(ENDPOINT);
     setName(name);
@@ -53,7 +54,7 @@ const Chat = ({ location }) => {
 
     // // for unmounting
     return () => {
-      // socket.emit("disconnect");
+      socket.emit("disconnect");
       socket.off();
     };
   }, [location.search]);
