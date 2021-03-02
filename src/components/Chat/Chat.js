@@ -8,8 +8,8 @@ import Messages from "../Messages/Messages";
 import Picker from "emoji-picker-react";
 import TextContainer from "../TextContainer/TextContainer";
 
-// const ENDPOINT = "http://localhost:5000";
-const ENDPOINT = "https://baat-chit.herokuapp.com/";
+const ENDPOINT = "http://localhost:5000";
+// const ENDPOINT = "https://baat-chit.herokuapp.com/";
 let socket;
 let typingTimer;
 
@@ -108,7 +108,11 @@ const Chat = ({ location }) => {
   return (
     <>
       <div id="outerContaner" className="outerContainer">
+        <div className="backgroundPattern circle"></div>
+        <div className="backgroundPattern circle2"></div>
+        <div className="backgroundPattern heptagon"></div>
         <TextContainer users={users} />
+
         <div className="container">
           <InfoBar room={room} />
           <Messages typingMessage={typing} messages={messages} name={name} />

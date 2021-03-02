@@ -8,17 +8,58 @@ body {
   align-items: center;
   height: 95vh;
   padding: 0 5%;
+  position: relative;
+}
+.backgroundPattern {
+  position: absolute;
+  z-index: -1;
+}
+.circle {
+  background-color: rgb(89, 94, 100);
+  top: 10%;
+  left: 10%;
+  height: 80px;
+  width: 80px;
+  clip-path: circle(50% at 50% 50%);
+}
+.circle2 {
+  background-color: rgb(169, 178, 184);
+  bottom: 40%;
+  right: 10%;
+  height: 200px;
+  width: 200px;
+  /* clip-path: circle(50% at 50% 50%); */
+  border-radius: 50%;
+  animation: shrinkGrow 30s ease-in-out infinite;
+}
+.heptagon {
+  background-color: rgb(255, 255, 255);
+  left: 2%;
+  bottom: 20%;
+  height: 100px;
+  width: 100px;
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+  animation: spin 50s ease-in-out infinite;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #2c3a47;
+  background: #5b89b452;
   border-radius: 12px;
   height: 60%;
   width: 35%;
-
+  backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
   overflow: hidden;
 }
 
@@ -92,5 +133,22 @@ input.emoji-search {
     height: 650px;
     display: flex;
     margin-bottom: 100px;
+  }
+}
+/* animations*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shrinkGrow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
   }
 }
