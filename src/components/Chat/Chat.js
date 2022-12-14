@@ -136,12 +136,6 @@ const Chat = ({ location }) => {
           </div>
         </div>
       </div>
-//       <h2 className="creatorName">
-//         Project By Aman Jha{" "}
-//         <span role="img" aria-label="emoji">
-//           💻
-//         </span>
-//       </h2>
     </>
   );
 };
