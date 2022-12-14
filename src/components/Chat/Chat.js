@@ -9,7 +9,7 @@ import Picker from "emoji-picker-react";
 import TextContainer from "../TextContainer/TextContainer";
 
 // const ENDPOINT = "http://localhost:5000";
-const ENDPOINT = "https://baat-chit.herokuapp.com/";
+const ENDPOINT = "https://baat-chit-backend.onrender.com/";
 let socket;
 let typingTimer;
 
